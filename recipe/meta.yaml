@@ -3,7 +3,7 @@
 
 package:
   name: {{ name }}
-  version: {{ version }}
+  version: 1.0.0.1
 
 source:
   url: https://github.com/garbageslam/visit_struct/archive/refs/tags/v{{ version }}.tar.gz
