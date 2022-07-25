@@ -8,9 +8,11 @@ package:
 source:
   url: https://github.com/garbageslam/visit_struct/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 7e5d727bd9fbe444d182840625f5eb21f2cf67f06f3aeab27a2d7c4724b3c09c
+  patches:
+    -  backport_visitable_init.patch 
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
