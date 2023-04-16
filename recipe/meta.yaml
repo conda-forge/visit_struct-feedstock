@@ -3,13 +3,11 @@
 
 package:
   name: {{ name }}
-  version: 1.0.0.1
+  version: {{ version }}
 
 source:
-  url: https://github.com/garbageslam/visit_struct/archive/refs/tags/v{{ version }}.tar.gz
+  url: https://github.com/cbeck88/visit_struct/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 73a84f2d8a8844bc03a919163b27ee3b3f85d8c64f6151ce098ca50dbed6be51
-  patches:
-    - backport_visitable_init.patch
 
 build:
   number: 0
@@ -35,7 +33,7 @@ test:
     - if not exist %PREFIX%\\Library\\share\\visit_struct\\visit_struct-config.cmake exit 1  # [win]
 
 about:
-  home: https://github.com/garbageslam/visit_struct
+  home: https://github.com/cbeck88/visit_struct
   license: BSL-1.0
   license_file: LICENSE
   summary: A miniature library for struct-field reflection in C++.
