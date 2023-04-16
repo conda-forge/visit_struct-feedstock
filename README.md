@@ -1,11 +1,11 @@
-About visit_struct
-==================
+About visit_struct-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/visit_struct-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/garbageslam/visit_struct
 
 Package license: BSL-1.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/visit_struct-feedstock/blob/main/LICENSE.txt)
 
 Summary: A miniature library for struct-field reflection in C++.
 
