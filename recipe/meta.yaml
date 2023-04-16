@@ -1,18 +1,16 @@
 {% set name = "visit_struct" %}
-{% set version = "1.0" %}
+{% set version = "1.1.0" %}
 
 package:
   name: {{ name }}
-  version: 1.0.0.1
+  version: {{ version }}
 
 source:
-  url: https://github.com/garbageslam/visit_struct/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 7e5d727bd9fbe444d182840625f5eb21f2cf67f06f3aeab27a2d7c4724b3c09c
-  patches:
-    -  backport_visitable_init.patch 
+  url: https://github.com/cbeck88/visit_struct/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: 73a84f2d8a8844bc03a919163b27ee3b3f85d8c64f6151ce098ca50dbed6be51
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -35,10 +33,10 @@ test:
     - if not exist %PREFIX%\\Library\\share\\visit_struct\\visit_struct-config.cmake exit 1  # [win]
 
 about:
-  home: https://github.com/garbageslam/visit_struct
+  home: https://github.com/cbeck88/visit_struct
   license: BSL-1.0
   license_file: LICENSE
-  summary:  A miniature library for struct-field reflection in C++.
+  summary: A miniature library for struct-field reflection in C++.
 
 extra:
   recipe-maintainers:
