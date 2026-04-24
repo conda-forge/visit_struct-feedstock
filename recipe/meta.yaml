@@ -1,13 +1,13 @@
 {% set name = "visit_struct" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://github.com/cbeck88/visit_struct/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 73a84f2d8a8844bc03a919163b27ee3b3f85d8c64f6151ce098ca50dbed6be51
+  url: https://github.com/cbeck88/visit_struct/archive/refs/tags/{{ version }}.tar.gz
+  sha256: aa0f4cc674ee584e0498604971c8bbdc0eeb7d6d6386c95695211b0418ff2bef
 
 build:
   number: 0
@@ -16,6 +16,7 @@ requirements:
   build:
     - cmake
     - {{ compiler('cxx') }}
+    - {{ stdlib("c") }}
     - ninja
 
 test:
